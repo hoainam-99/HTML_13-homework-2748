@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web tin tức</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__banner">
+                <div class="header__banner--up">
+                    <p>
+                        Thứ Bảy ngày 8 tháng 10 năm 2016 17:07:57
+                    </p>
+                    <button onclick="openForm()">Đăng nhập</button>
+                </div>
+                <div class="header__banner--down">
+                    <h1>NEWS</h1>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__taskbar">
+                <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="">GIỚI THIỆU</a></li>
+                <li><a href="">TIN TỨC</a></li>
+                <li><a href="">CHIA SẺ</a></li>
+                <li><a href="">QUAN ĐIỂM</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content__left">
+                <div class="content__left--img">
+                    <img src="./assets/img/canvieclam.jpg" alt="">
+                </div>
+                <div class="content__left--center">
+                    <a href="#">5 lí do bạn không nên làm việc cho công ty khởi nghiệp</a>
+                    <br>
+                    <span>05-10-2016 14:04:19</span>
+                    <p>Qua một thời gian lênh đênh tìm việc làm, Trương Đình Nam tôi có chút kinh nghiệm xin việc và kinh nghiệm ...</p>
+                </div>
+                <ul class="content__left--right">
+                    <li>
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="">5 lí do bạn không nên làm cho công ty khởi nghiệp</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="">Chiến lược bán hàng không cần quảng cáo</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="">Tôi đã kiếm được 100$ đầu tiên từ Youtube như thế nào</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="">Làm giàu trên internet, tại sao không?</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="">Tạo blog để kiếm tiền, bạn đã biết chưa?</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-angle-double-right"></i>
+                        <a href="">Giới thiệu về chủ Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content__right">
+                <div class="content__right--main">
+                    <h3>TIN MỚI</h3>
+                    <div class="main">
+                        <img src="./assets/img/canvieclam.jpg" alt="">
+                        <a href="">5 lí do bạn không nên làm cho công ty khởi nghiệp</a>
+                    </div>
+
+                    <div class="main">
+                        <img src="./assets/img/canvieclam.jpg" alt="">
+                        <a href="">Chiến lược bán hàng không cần quảng cáo</a>
+                    </div>
+
+                    <div class="main">
+                        <img src="./assets/img/canvieclam.jpg" alt="">
+                        <a href="">Tôi đã kiếm được 100$ đầu tiên từ Youtube như thế nào</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login hide">
+        <form action="" class="login__form" method="post" onsubmit="return addData()">
+            <div class="login__form--close">
+                <button onclick="closeForm()"><i class="fas fa-times"></i></button> 
+            </div>
+                <h2>Login</h2>
+            <div class="login__form--input">
+                <label for="name_id">Username</label>
+                <input type="text" required id="name_id" name="Username" placeholder="Enter Username">
+            </div>
+            <div class="login__form--input">
+                <label for="pwd_id">Password</label>
+                <input type="password" required id="pwd_id" name="Password" placeholder="Enter password">
+            </div>
+            <div class="login__form--btn">
+                <button class="submit btn" type="submit">Login</button>
+                <button class="reset btn" type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./assets/js/app.js"></script>
+</html>
