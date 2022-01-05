@@ -95,26 +95,29 @@
         </div>
     </div>
 
-    <div class="login hide">
-        <form action="" class="login__form" method="post" onsubmit="return addData()">
+    <div class="login">
+        <div class="login-nav">
             <div class="login__form--close">
                 <button onclick="closeForm()"><i class="fas fa-times"></i></button> 
             </div>
-                <h2>Login</h2>
-            <div class="login__form--input">
-                <label for="name_id">Username</label>
-                <input type="text" required id="name_id" name="Username" placeholder="Enter Username">
-            </div>
-            <div class="login__form--input">
-                <label for="pwd_id">Password</label>
-                <input type="password" required id="pwd_id" name="Password" placeholder="Enter password">
-            </div>
-            <div class="login__form--btn">
-                <button class="submit btn" type="submit">Login</button>
-                <button class="reset btn" type="reset">Clear</button>
-            </div>
-        </form>
+            <form action="" class="login__form" method="post" onsubmit="return loginCheck()">
+                    <h2>Login</h2>
+                <div class="login__form--input">
+                    <label for="name_id">Username</label>
+                    <input type="text" required id="name_id" name="Username" placeholder="Enter Username">
+                </div>
+                <div class="login__form--input">
+                    <label for="pwd_id">Password</label>
+                    <input type="password" required id="pwd_id" name="Password" placeholder="Enter password">
+                </div>
+                <div class="login__form--btn">
+                    <button class="submit btn" type="submit">Login</button>
+                    <button class="reset btn" type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./assets/js/app.js"></script>
 </html>

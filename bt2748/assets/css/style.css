@@ -242,17 +242,15 @@ body {
           align-items: center;
 }
 
-.login .login__form {
+.login .login-nav {
   background-color: #fff;
-  padding: 18px;
-  width: 400px;
 }
 
-.login .login__form .login__form--close {
+.login .login-nav .login__form--close {
   text-align: right;
 }
 
-.login .login__form .login__form--close button {
+.login .login-nav .login__form--close button {
   padding: 6px 8px;
   border: none;
   border-radius: 5px;
@@ -262,18 +260,23 @@ body {
   font-size: 18px;
 }
 
-.login .login__form .login__form--close button:hover {
+.login .login-nav .login__form--close button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: red;
   color: #fff;
 }
 
-.login .login__form h2 {
+.login .login-nav .login__form {
+  padding: 18px;
+  width: 400px;
+}
+
+.login .login-nav .login__form h2 {
   text-align: center;
 }
 
-.login .login__form .login__form--input {
+.login .login-nav .login__form .login__form--input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,18 +285,18 @@ body {
           align-items: center;
 }
 
-.login .login__form .login__form--input label, .login .login__form .login__form--input input {
+.login .login-nav .login__form .login__form--input label, .login .login-nav .login__form .login__form--input input {
   margin: 12px 0;
   font-size: 18px;
 }
 
-.login .login__form .login__form--input label {
+.login .login-nav .login__form .login__form--input label {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.login .login__form .login__form--input input {
+.login .login-nav .login__form .login__form--input input {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -302,11 +305,11 @@ body {
   border-radius: 5px;
 }
 
-.login .login__form .login__form--btn {
+.login .login-nav .login__form .login__form--btn {
   text-align: center;
 }
 
-.login .login__form .login__form--btn .btn {
+.login .login-nav .login__form .login__form--btn .btn {
   padding: 8px;
   width: 65px;
   margin: 20px;
@@ -317,17 +320,17 @@ body {
   color: #fff;
 }
 
-.login .login__form .login__form--btn .btn:hover {
+.login .login-nav .login__form .login__form--btn .btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
 }
 
-.login .login__form .login__form--btn .submit {
+.login .login-nav .login__form .login__form--btn .submit {
   background-color: #14a714;
 }
 
-.login .login__form .login__form--btn .reset {
+.login .login-nav .login__form .login__form--btn .reset {
   background-color: #fa3a3a;
 }
 /*# sourceMappingURL=style.css.map */

@@ -178,10 +178,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    .login__form{
+    .login-nav{
         background-color: #fff;
-        padding: 18px;
-        width: 400px;
         .login__form--close{
             text-align: right;
             button{
@@ -198,51 +196,56 @@ body{
                 color: #fff;
             }
         }
-        h2{
-            text-align: center;
-        }
 
-        .login__form--input{
-            display: flex;
-            align-items: center;
-            label, input{
-                margin: 12px 0;
-                font-size: 18px;
+        .login__form{
+            padding: 18px;
+            width: 400px;
+            h2{
+                text-align: center;
             }
-            label{
-                flex: 1;
+    
+            .login__form--input{
+                display: flex;
+                align-items: center;
+                label, input{
+                    margin: 12px 0;
+                    font-size: 18px;
+                }
+                label{
+                    flex: 1;
+                }
+                input{
+                    flex: 2;
+                    padding: 6px 8px;
+                    border: 0.5px solid #ccc;
+                    border-radius: 5px;
+                }
             }
-            input{
-                flex: 2;
-                padding: 6px 8px;
-                border: 0.5px solid #ccc;
-                border-radius: 5px;
-            }
-        }
-
-        .login__form--btn{
-            text-align: center;
-            .btn{
-                padding: 8px;
-                width: 65px;
-                margin: 20px;
-                border: none;
-                border-radius: 5px;
-                transition: 0.25s;
-                color: #fff;
-            }
-
-            .btn:hover{
-                transform: scale(1.1);
-                cursor: pointer;
-            }
-
-            .submit{
-                background-color: rgb(20, 167, 20);
-            }
-
-            .reset{
-                background-color: rgb(250, 58, 58);
+    
+            .login__form--btn{
+                text-align: center;
+                .btn{
+                    padding: 8px;
+                    width: 65px;
+                    margin: 20px;
+                    border: none;
+                    border-radius: 5px;
+                    transition: 0.25s;
+                    color: #fff;
+                }
+    
+                .btn:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+    
+                .submit{
+                    background-color: rgb(20, 167, 20);
+                }
+    
+                .reset{
+                    background-color: rgb(250, 58, 58);
+                }
             }
         }
     }
